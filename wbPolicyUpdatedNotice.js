@@ -3,8 +3,8 @@ try {
     .addEventListener('load', function () {
 
       var startDate = new Date("12/1/2019");
-      var endDate = new Date("1/1/2020");
-      //var startDate = new Date("1/1/2020"); var endDate = new Date("2/1/2020");
+      //var startDate = new Date("1/1/2020"); 
+      var endDate = new Date("2/1/2020");
       var todaysDate = new Date();
 
       if (todaysDate < startDate || todaysDate > endDate) 
