@@ -37,4 +37,6 @@ try {
           //document.cookie = 'ads.seen_choices=1; path=/; max-age=31536000';
         });
     });
-} catch (err) {}
+} catch (err) {
+  alert('err', err)
+}
