@@ -1,13 +1,44 @@
 try {
+  function setWMCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+  function getWMCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
   window
     .addEventListener('load', function () {
 
-      var startDate = new Date("12/1/2019");
-      //var startDate = new Date("1/1/2020"); 
-      var endDate = new Date("2/1/2020");
+      var startDate = new Date("3/1/2020");
+      var exdays =  31
+      var userAckCookieName = "wm_priv_policy_upd_ack"
+      
+      var endDate = new Date(startDate);
+      endDate.setDate(endDate.getDate() + exdays);
+
       var todaysDate = new Date();
 
       if (todaysDate < startDate || todaysDate > endDate) 
+        return;
+      
+      var userAckCookieValue  = getWMCookie(userAckCookieName)
+      
+      if(userAckCookieValue == "1")
         return;
       
       var wbPolicyUpdatedDivStyle = "border-radius: 7px;" +
@@ -55,6 +86,7 @@ try {
             .getElementById('wb-policy-updated-div')
             .style
             .display = 'none';
+            setWMCookie(userAckCookieName, "1", exdays)
           //document.cookie = 'ads.seen_choices=1; path=/; max-age=31536000';
         });
     });
