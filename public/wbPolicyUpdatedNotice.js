@@ -41,20 +41,21 @@ try {
             if (userAckCookieValue == "1")
                 return;
 
-            var wbPolicyUpdatedDivStyle = " border-radius: 7px;" +
+            var wbPolicyUpdatedDivStyle = " .wbPolicyUpdatedDivStyle { border-radius: 7px;" +
                 "background-color: #f2f2f2;" +
                 "border: solid 1px #999;" +
                 "bottom: 7px;" +
-                "font-size: 13px;" +
+                "font-size: 16px;" +
                 "left: 5px;" +
                 "line-height: 18px;" +
                 "padding: 7px;" +
                 "position: fixed;" +
                 "max-width: 45%;" +
                 "width: auto;" +
-                "z-index: 1002; ";
+                "z-index: 1002;" +
+                "font-family: Montserrat, Arial, Helvetica, sans-serif; } ";
 
-            var wbPolicyUpdatedDivCloseStyle = " cursor: pointer;" +
+            var wbPolicyUpdatedDivCloseStyle = ".wbPolicyUpdatedDivCloseStyle { cursor: pointer;" +
                 "float: right;" +
                 "position: absolute;" +
                 "right: 8px;" +
@@ -62,18 +63,23 @@ try {
                 "font-weight:bold;" +
                 "font-size: 28px;" +
                 "line-height: 12px;" +
-                "margin-left: 5px; "
+                "margin-left: 5px; } "
 
-            var wbPolicyUpdatedDivBodyStyle = " margin: 0px 20px 0px 0px; "
+            var wbPolicyUpdatedDivBodyStyle = " .wbPolicyUpdatedDivBodyStyle { margin: 0px 20px 0px 0px; }"
+
+            var wbPrivacyUpdStyleBlock = document.createElement('style');
+            wbPrivacyUpdStyleBlock.type = 'text/css';
+            wbPrivacyUpdStyleBlock.innerHTML = wbPolicyUpdatedDivStyle + wbPolicyUpdatedDivCloseStyle + wbPolicyUpdatedDivBodyStyle;
+            document.getElementsByTagName('head')[0].appendChild(wbPrivacyUpdStyleBlock);
 
             var wbPolicyUpdatedDiv = document.createElement("div");
             wbPolicyUpdatedDiv.setAttribute("id", "wb-policy-updated-div");
             wbPolicyUpdatedDiv.setAttribute("class", "wbPolicyUpdatedDivStyle");
-            wbPolicyUpdatedDiv.setAttribute("style", wbPolicyUpdatedDivStyle);
-            wbPolicyUpdatedDiv.innerHTML = "<div id='wb-policy-updated-div-close' style='" + wbPolicyUpdatedDivCloseStyle + "' class='wbPolicyUpdatedDivCloseStyle'>&times;</div>" +
-                "<div class='wb-policy-updated-div-body' style='" + wbPolicyUpdatedDivBodyStyle + "' class='wbPolicyUpdatedDivBodyStyle'>" +
+            //wbPolicyUpdatedDiv.setAttribute("style", wbPolicyUpdatedDivStyle);
+            wbPolicyUpdatedDiv.innerHTML = "<div id='wb-policy-updated-div-close' class='wbPolicyUpdatedDivCloseStyle'>&times;</div>" +
+                "<div class='wb-policy-updated-div-body' class='wbPolicyUpdatedDivBodyStyle'>" +
                 "We have updated our Terms of Use.  Please click <a href='https://policies.warnerbros.com/terms/en-us/' target='_blank'>here</a> to review it." +
-                "&nbsp;&nbsp;&nbsp;</div>";
+                "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>";
 
             if (document.body == null) {
                 document.documentElement.appendChild(wbPolicyUpdatedDiv);
