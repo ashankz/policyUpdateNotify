@@ -24,9 +24,9 @@ try {
     window
         .addEventListener('load', function() {
 
-            var startDate = new Date("4/1/2020");
+            var startDate = new Date("5/28/2020");
             var exdays = 30
-            var userAckCookieName = "wm_priv_policy_upd_ack_TOU_4_20"
+            var userAckCookieName = "wm_priv_policy_upd_ack_privpol_5_28"
 
             var endDate = new Date(startDate);
             endDate.setDate(endDate.getDate() + exdays);
@@ -78,7 +78,7 @@ try {
             //wbPolicyUpdatedDiv.setAttribute("style", wbPolicyUpdatedDivStyle);
             wbPolicyUpdatedDiv.innerHTML = "<div id='wb-policy-updated-div-close' class='wbPolicyUpdatedDivCloseStyle'>&times;</div>" +
                 "<div class='wb-policy-updated-div-body' class='wbPolicyUpdatedDivBodyStyle'>" +
-                "We have updated our Terms of Use.  Please click <a href='https://policies.warnerbros.com/terms/en-us/' target='_blank'>here</a> to review it." +
+                "We have updated our Privacy Policy.  Please click <a href='https://policies.warnerbros.com/privacy/en-us/' target='_blank'>here</a> to review it." +
                 "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>";
 
             if (document.body == null) {
