@@ -24,9 +24,9 @@ try {
     window
         .addEventListener('load', function() {
 
-            var startDate = new Date("5/28/2020");
+            var startDate = new Date("07/01/2020");
             var exdays = 30
-            var userAckCookieName = "wm_priv_policy_upd_ack_privpol_5_28"
+            var userAckCookieName = "wm_priv_policy_upd_ack_privpol_07_01"
 
             var endDate = new Date(startDate);
             endDate.setDate(endDate.getDate() + exdays);
