@@ -1,0 +1,604 @@
+@import url('https://fast.fonts.net/t/1.css?apiType=css&projectid=2503d405-b428-4f7d-9f26-6c73cba24ce6');
+@font-face{
+	font-family:'Lucky Goldfish W05';
+	src:url('/fonts/c9afb420-cf53-4981-9359-9f2c209fa1d6.woff2') format('woff2'),url('/fonts/86939f52-4959-43d7-bc62-8192d356e0f4.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family:'Lucky Goldfish W05';
+	src:url('/fonts/dec97815-503d-49fc-aa63-4eef931f6976.woff2') format('woff2'),url('/fonts/69381e7e-a85f-4e0e-83c0-4d271bfc79f1.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-height: 100%;
+	margin: 0;
+	background-color: #010205;
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-page-bg.jpg);
+	background-attachment: fixed;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+body.body-kidsverse{
+	background-color: #FFF;
+	background-size: 100% auto;
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-kidsverse-page-bg.jpg);
+}
+body.transparent-bg{
+	background: transparent;
+}
+#__next{
+	min-height: 100%;
+}
+a{
+	color:#328CF0;
+	text-decoration: none;
+}
+a:hover{
+	color:#FFF;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5{
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1.05rem;
+}
+.secondary-header{
+	color: #6a93bd;
+}
+.container{
+	animation: 0.5s width;
+}
+.container.container-wide{
+	max-width: 1440px;
+}
+.container.container-slim{
+	max-width: 992px;
+}
+.wrapper .img-fluid{
+	max-width: 100%;
+}
+.wrapper{
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+}
+.wrapper.hidden>*{
+	display:none!important;
+}
+.header-wrapper{
+	background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+}
+.home-content{
+	background-image: url('https://www.dcfandome.com/16x9/images/dcfd-universe-bg-alt.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.thank-you-content {
+    background-image: url('https://www.dcfandome.com/16x9/images/ww84-final-bkgd.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  .thank-you-content {
+    background-image: url('https://www.dcfandome.com/16x9/images/ww84-final-bkgd-mobile.jpg');
+  }
+}
+
+.home-island{
+	width:100%;
+/* 	max-width: 350px; */
+	height: auto;
+}
+.island-hub {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+    height: auto;
+}
+.island-hub-text-header{
+	height: 50px;
+	width: auto;
+    margin-bottom: 10px;
+	display: inline-block;
+}
+.island-graphic-youverse{
+   animation: float 7.5s linear infinite;
+}
+.island-graphic-hoh{
+   animation: float 8s linear infinite;
+}
+.island-graphic-kidsverse{
+   animation: float 8.5s linear infinite;
+}
+.island-graphic-insiderverse{
+   animation: float 9s linear infinite;
+}
+.island-graphic-watchverse{
+   animation: float 9.5s linear infinite;
+}
+.island-graphic-funverse{
+   animation: float 10s linear infinite;
+}
+@keyframes float {
+    from { transform: rotate(0deg) translateX(3px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(3px) rotate(-360deg); }
+}
+.home-island-link, .search-icon-container a{
+	display:inline-block;
+    transition: 1.0s transform;
+}
+.home-island-link:hover, .search-icon-container a:hover{
+	transform: scale(1.2, 1.2);
+}
+.main-content{
+	flex: 1 0 auto;
+}
+.header-links{
+	margin-bottom: -50px;
+	position: relative;
+	z-index: 1000;
+}
+.header-logo{
+    max-height: 200px;
+    margin: 10px 0px 10px 0px;
+}
+.row-header{
+	max-height: 30px;
+    margin-bottom: 20px;
+    vertical-align: -30px
+}
+.row-title{
+	display:inline-block;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+.view-all{
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.thumbnail-container{
+	padding-bottom: 20px;
+}
+.thumbnail-type{
+	position: relative;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.thumbnail-type-link{
+    border: 1px solid #09E;
+}
+.thumbnail-type:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	height: 20px;
+	width: 20px;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+.thumbnail-type.thumbnail-type-video:after{
+	background-image: url(https://www.dcfandome.com/16x9/images/icon-play.png);
+}
+.thumbnail-type.thumbnail-type-link:after{
+	background-image: url(https://www.dcfandome.com/16x9/images/icon-link.png);
+}
+.thumbnail-title{
+	display:block;
+	padding-top:15px;
+	font-size: 12px;
+	font-weight: normal;
+}
+.thumbnail-container img.thumbnail-verse-icon{
+	display:block;
+	height: 20px;
+	width: auto;
+	margin-bottom: 5px;
+}
+.thumbnail-link{
+	color: #FFF;
+	display: block;
+	transform: scale(1.0, 1.0);
+    transition: 1.0s transform;
+}
+.thumbnail-link:hover{
+	transform: scale(1.1, 1.1);
+}
+.dark-mode .input-group-text{
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	border-color: transparent;
+}
+.dark-mode .custom-select{
+	color: #FFF;
+	border-color: transparent;
+	text-transform: uppercase;
+	background: rgba(0,0,0,0.5) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+}
+.dark-mode .custom-select:focus {
+	outline: none !important;
+    border:1px solid #FFF;
+    box-shadow: 0 0 5px #FFF;
+}
+.light-mode .input-group-text{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.light-mode .custom-select{
+	color: #FFF;
+	border-color: #007bff;
+	background: #007bff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+}
+.btn-dark{
+	background-color: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	/* border: none; */
+}
+.single-video-branding{
+	height:30px;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: contain;
+	margin-bottom: 10px;
+}
+.hidden-link{
+	height: 100%;
+}
+.video-wrapper{
+	padding: 5px;
+	/* background: linear-gradient(90deg, rgba(0,69,166,1) 0%, rgba(0,126,242,1) 50%, rgba(0,69,166,1) 100%); */
+    line-height: 0;
+}
+.video-wrapper>div{
+	width: 100%;
+}
+.wrapper-thank-you{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-thank-you.png);
+}
+.thank-you-text{
+	text-shadow: 0px 0px 30px #9300f9;
+	padding-bottom: 50px;
+}
+/* .wrapper-hoh .video-wrapper{
+	background: linear-gradient(90deg, rgba(0,69,166,1) 0%, rgba(0,126,242,1) 50%, rgba(0,69,166,1) 100%);
+} */
+.wrapper-hoh{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-hoh-alt.png);
+}
+.wrapper-hoh.island-wrapper{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-hoh.png);
+}
+.wrapper-hoh .single-video-branding{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-logo-hoh-alt.png);
+}
+.wrapper-hoh .video-wrapper{
+	/* background: linear-gradient(90deg, rgba(0,69,166,1) 0%, rgba(0,126,242,1) 50%, rgba(0,69,166,1) 100%); */
+}
+.wrapper-funverse{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-funverse-alt.png);
+}
+.wrapper-funverse.island-wrapper{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-funverse.png);
+}
+.wrapper-funverse .single-video-branding{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-logo-funverse-alt.png);
+}
+.wrapper-insiderverse{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-insiderverse-alt.png);
+}
+.wrapper-insiderverse.island-wrapper{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-insiderverse.png);
+}
+.wrapper-insiderverse .single-video-branding{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-logo-insiderverse-alt.png);
+}
+.wrapper-youverse{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-youverse-alt.png);
+}
+.wrapper-youverse.island-wrapper{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-youverse.png);
+}
+.wrapper-youverse .single-video-branding{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-logo-youverse-alt.png);
+}
+.wrapper-watchverse{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-watchverse-alt.png);
+}
+.wrapper-watchverse.island-wrapper{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-watchverse.png);
+}
+.wrapper-watchverse .single-video-branding{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-logo-watchverse-alt.png);
+}
+.wrapper-kidsverse{
+	min-height: 100vh;
+	background-color: #E8F8FF;
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-dckids.png);
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-dckids.png), linear-gradient(0deg, rgba(232,248,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+.wrapper-kidsverse a:not(.btn){
+	color: #1966d3;
+}
+.wrapper-kidsverse .header-logo{
+	max-height: 180px;
+}
+/* .wrapper-kidsverse.island-wrapper{
+	background-color: #FFF;
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-kidsverse.png);
+} */
+.wrapper-kidsverse, .wrapper-kidsverse .thumbnail-title{
+	color: #444;
+}
+.wrapper-kidsverse .header-wrapper{
+	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 100%);
+}
+.wrapper-kidsverse .single-video-branding{
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-logo-kidsverse-alt.png);
+}
+.wrapper-kidsverse h1, .wrapper-kidsverse h2, .wrapper-kidsverse h3, .wrapper-kidsverse h4, .wrapper-kidsverse h5,
+.search-wrapper-kidsverse h1, .search-wrapper-kidsverse h2, .search-wrapper-kidsverse h3, .search-wrapper-kidsverse h4, .search-wrapper-kidsverse h5{
+	text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 0px;
+	font-family: 'Lucky Goldfish W05', sans-serif;
+	color: #0765d3;
+	line-height: 80%;
+	padding-bottom: 20px;
+}
+.wrapper-kidsverse .footer ul li{
+	border-left:1px solid rgba(0,0,0,0.3);
+}
+.wrapper-kidsverse a:hover{
+	color: #0765d3;
+}
+.wrapper-kidsverse a.btn-primary:hover{
+	color: #FFF;
+}
+.wrapper-kidsverse .thumbnail-type{
+	box-shadow: 0 0 20px #1966d3;
+}
+.wrapper-kidsverse .island-hub-text{
+	text-align: center;
+}
+.wrapper-kidsverse .island-hub-text-header{
+	max-height: 40px;
+}
+.wrapper-kidsverse .island-hub-text p{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #FFF;
+    border-radius: 100%;
+    margin-left: 10px;
+    color: #FFF;
+    background-color: rgba(0,0,0,0.4);
+}
+.link-inner{
+	display:flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+    justify-content: center;
+}
+.link-inner i{
+	margin: 0 auto;
+}
+.single-video-title{
+	font-size: 24px;
+}
+.button-cta{
+	width: 100%;
+	max-width: 600px;
+	transition: 1.0s transform;
+}
+.button-cta:hover{
+	transform: scale(1.2, 1.2);
+}
+.footer{
+	flex-shrink: none;
+	text-transform: uppercase;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.footer ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer ul li{
+	display: inline-block;
+	border-left:1px solid rgba(255,255,255,0.6);
+}
+.footer ul li:first-child{
+	border: none;
+}
+.footer ul li a {
+	margin: 0 5px;
+}
+.footer-links{
+	padding:20px 0;
+}
+.legal-line{
+	font-size: 70%;
+	color: #AAA;
+}
+.search-wrapper{
+	background-image:url(https://www.dcfandome.com/16x9/images/search-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: 0.5s height;
+	z-index: 2000;
+	overflow-y:scroll;
+}
+.search-wrapper.search-wrapper-kidsverse{
+	background-color: #FFF;
+	background-image: url(https://www.dcfandome.com/16x9/images/dcfd-multiverse-wrapper-kidsverse-alt.png);
+	color: #444;
+}
+.search-wrapper-kidsverse .thumbnail-link{
+	color: #444;
+}
+.search-wrapper.hidden{
+	height: 0px;
+}
+.search-wrapper.hidden>*{
+	display: none!important;
+}
+.sticky-header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: rgba(0,0,0,0.5);
+}
+.search-wrapper-kidsverse .sticky-header{
+    background: rgba(86, 201, 249, 0.8);
+}
+.search-wrapper.hidden .sticky-header{
+	display:none;
+}
+.input-group-dark input, .input-group-dark .input-group-text, .input-group-dark .btn {
+    background: #111;
+    color: #FFF;
+    border-color: #444;
+}
+.input-group-dark input:focus{
+	background: #333;
+	color: #FFF;
+}
+.no-scroll { 
+    height: 100%; 
+    overflow: hidden; 
+}
+.search-content{
+	margin-top: 100px;
+}
+.search-icon-container{
+	width: 100%;
+	max-width:600px;
+	margin: 0 auto;
+}
+.thumbnail-container img{
+	width: 100%;
+	max-width: 400px;	
+}
+.up-next-overlay{
+	width: 100%;
+    padding: 0.7em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: normal;								
+}
+.up-next-image{
+	width: 100%;
+	max-width: 110px;
+}
+.up-next-title{
+	font-size: 12px;
+}
+.up-next-header{
+	font-size: 16px;
+	padding-top: 10px;
+	margin: 0px;
+}
+.share-toast{
+	position: fixed;
+	padding: 20px;
+	bottom: 0;
+	background: rgb(10 38 101);
+	width: 100%; 
+   	width: 100vw;
+	transition: 1s bottom;
+}
+.share-toast.hidden{
+	bottom: -20%;
+}
+@media (max-width: 992px) { 
+	#search-results{
+		margin-bottom:100px;
+	}
+	.header-logo, .wrapper-kidsverse .header-logo{
+		max-height: 100px;
+	}
+	.wrapper-kidsverse h1, .wrapper-kidsverse h2, .wrapper-kidsverse h3, .wrapper-kidsverse h4, .wrapper-kidsverse h5,
+	.search-wrapper-kidsverse h1, .search-wrapper-kidsverse h2, .search-wrapper-kidsverse h3, .search-wrapper-kidsverse h4, .search-wrapper-kidsverse h5 {
+	    font-size: 28px;
+		letter-spacing: -2px;
+	}
+	h1, h2, h3, h4{
+		font-size: 20px;
+	}
+	.home-content, .thank-you-content{
+		background-attachment: initial;
+	}
+	.container.container-slim{
+		max-width: 600px;
+	}
+	.dcfd-logo-sm{
+		height:24px;
+		margin-bottom: 10px;
+	}
+	.single-video-title{
+		font-size: 18px;
+	}
+	.up-next-image{
+		max-width: 80px;
+	}
+	.up-next-header{
+		font-size: 14px;
+		padding: 0px;
+	}
+	.up-next-overlay .up-next-title{
+        padding: 0;
+    }
+}
+
+.player__container {
+	position: relative;
+	width: 100%;
+	height: 100%; 
+}
+
+.dcfd-video>div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+}
+.dcfd-video {
+	width: 100%;
+}
+
